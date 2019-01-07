@@ -1,32 +1,212 @@
+
+
 .App {
+  background-color: whitesmoke;
+}
+body {
+  background-color: whitesmoke;
+}
+
+.container {
+  margin:auto;
+  width:300px;
   text-align: center;
+  height:100vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+input {
+  width:200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.deck {
+  background-color: ghostwhite;
+  margin:8px;
+  height:125px;
+  width:100%;
+  border-radius:12px;
+  box-shadow: 0 8px 12px 6px rgba(0,0,0,0.12);
+  margin-top:20px;
+  padding-bottom:20px;
+}
+
+.card {
+  background-color: ghostwhite;
+  margin:8px;
+  height:125px;
+  width:100%;
+  border-radius:12px;
+  box-shadow: 0 8px 12px 6px rgba(0,0,0,0.12);
+  margin-top:20px;
+  padding-bottom:20px;
+  position:relative;
+}
+
+ .view {
+  height:225px !important;
+  margin-bottom:55px;
+}
+.deck-title {
+  padding-top:20px;
+  font-size:22px;
+  font-weight: 900;
+}
+
+.deck-title, .deckview {
+  margin-top:50px;
+}
+
+.cards-to-review {
+  margin-top:-10px;
+  font-size:13px;
+  color:forestgreen;
+  font-weight:600;
+}
+
+.btn {
+  color:white;
+  font-size:14px;
+  font-weight:600;
+  height:35px;
+  width:110px;
+  border-radius:12px;
+  padding:5px;
+  border:none;
+  outline:none;
+}
+
+
+.deck-btn {
+  background-color:#043f83;
+  text-decoration: none;
+}
+.deck-btn:hover{
+  background-color:#023064;
+
+}
+
+.no-cards-btn {
+  background-color: rgb(173, 168, 168);
+}
+
+.quiz-btn { 
+  background-color:#043f83;
+  text-decoration: none;
+  margin-top:30px;
+  height:50px;
+  width:150px;
+}
+.quiz-btn:hover{
+  background-color:#023064;
+}
+
+.refresh-btn {
+  margin-top:30px;
+  background-color: #62A87C;
+}
+.refresh-btn:hover{
+  background-color: rgb(75, 129, 95);
+}
+
+.cancel-btn {
+  margin-top:20px;
+  background-color: rgb(192, 54, 45);
+  margin-left:15px;
+}
+.cancel-btn:hover {
+  background-color: rgb(162, 54, 45);
+
+}
+
+.navbar {
+  height:30px;
+  background-color:rgb(173, 168, 168);
+  position: sticky;
+  top:0;
+  display:flex;
+  z-index:10;
+}
+
+.navbar a {
+  color: black;
+  font-weight:800;
+  margin-left:30px;
+  padding-top:5px;
+}
+
+textarea {
+  height: 80px;
+  width: 230px;
+}
+
+.new-deck {
+  height:45px;
+  font-size:28px;
+  font-weight:700;
+}
+
+.deckname-selector {
+  width:230px;
+  height:25px;
+}
+
+.add-card-success {
+  margin-top:30px;
+  background-color: #62A87C;
+  color:white;
+  width:80%;
+  font-size:20px;
+  border-radius:20px;
+  margin:auto;
+}
+
+.emoji {
+  font-size:56px;
+}
+
+.wrong {
+  background-color: rgb(192, 54, 45);
+}
+.wrong:hover {
+  background-color: rgb(168, 50, 41);
+}
+
+.easy {
+  background-color: #62a87c;
+} 
+.easy:hover {
+  background-color: rgb(86, 138, 105);
+
+}
+
+.very-easy {
+  background-color: rgb(0, 88, 15);
+}
+.very-easy:hover{
+  background-color: rgb(1, 68, 12);
+}
+
+.answers {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.answers button {
+  margin:3px;
+}
+.recto-verso {
+  background-color: rgb(205,205,205,0.3);
+  color:black;
+  margin-top:50px; 
+  bottom:25px;
+  position:absolute;
+  right:91px;
+  transition:all 0.2 ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.recto-verso:hover {
+  background-color: rgb(205,205,205,0.8);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-text {
+  font-size:20px;
+  width:90%;
+  margin:auto;
 }
